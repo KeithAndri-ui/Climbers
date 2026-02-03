@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import '../styles/Navigation.css'
+import logo from '../assets/logo.png'
 
 function Navigation() {
   const location = useLocation()
@@ -9,10 +10,15 @@ function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
-        <Link className="navbar-brand" to="/">
-          <span className="brand-icon">⛰️</span>
-          <span className="brand-text">Climbers</span>
-        </Link>
+       <Link className="navbar-brand" to="/">
+  <img
+    src={logo}
+    alt="Climbers logo"
+    className="brand-icon"
+  />
+  <span className="brand-text">Climbers</span>
+</Link>
+
         <button
           className="navbar-toggler"
           type="button"
