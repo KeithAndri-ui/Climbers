@@ -1,0 +1,153 @@
+.footer {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  color: #e2e8f0;
+  padding: 20px 0 12px;
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.footer-content {
+  margin-bottom: 15px;
+}
+
+.footer-section {
+  height: 100%;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-brand:hover {
+  transform: translateY(-2px);
+  color: white;
+}
+
+.footer-brand-icon {
+  font-size: 1.8rem;
+}
+
+.footer-brand-text {
+  font-weight: 700;
+}
+
+.footer-description {
+  color: #cbd5e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+  color: white;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.35rem;
+}
+
+.footer-links a {
+  color: #cbd5e0;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: white;
+  transform: translateX(5px);
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 12px;
+  margin-top: 15px;
+}
+
+.footer-copyright {
+  color: #a0aec0;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.footer-made-with {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 0 12px;
+  }
+
+  .footer-content {
+    margin-bottom: 12px;
+  }
+
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 12px;
+    margin-top: 12px;
+  }
+
+  .footer-made-with {
+    margin-top: 1rem;
+  }
+}
